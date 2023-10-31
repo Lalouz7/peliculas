@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Para la niña que me encanta ♥</title>
+  <style>
+    .body {
+      background-color: rgb(48, 192, 218);
+      text-align: center;
+    }
+
+    .body__title {
+      color: rgb(255, 255, 251);
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 50%;
+    }
+</style>
+</head>
+
+<body class="body">
+  <h1 class="body__title"> 🤭¿Quieres ver una peli conmigo mientras comemos pizza?🤭</h1>
+  <img src="https://www.teka.com/es-es/wp-content/uploads/sites/2/2021/09/pizza-cine.jpg" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">😍Si quiero😍</button>
+  <button id="no">😔No quiero😔</button>
+
+ <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('😄Tu puedes escoger la peli o la elijo yo😄');
+      alert('😏Te quiero dar muchos besitos por bonita😏');
+      location.href = 'https://www.youtube.com/watch?v=H2bC2FPUs40';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
